@@ -23,6 +23,7 @@ Se elige una señal original sin ninguna alteración, muestra un comportamiento 
 **Implementación en el Código:**
 
 `def calcular_snr(señal_ori, señal_ruido):`
+
     `potencia_señal = np.mean(señal_ori ** 2)`
     `ruido = señal_ruido - señal_ori`
     `potencia_ruido = np.mean(ruido ** 2)`
@@ -47,6 +48,7 @@ Como se puede observar en la imagen se muestra la señal original(azul) y la se�
 **Implementación en el Código:**
 
 `def ruido_gaussiano(señal, snr_objetivo):
+
     ruido = np.random.normal(0, np.std(señal) / (10 ** (snr_objetivo / 20)), señal.shape)
     señal_ruidosa = señal + ruido
     graficar_señales(tiempo, señal, señal_ruidosa, "Ruido Gaussiano", calcular_snr(señal, señal_ruidosa))`
