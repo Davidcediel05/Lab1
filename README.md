@@ -2,7 +2,8 @@
 ### Describcion 
 <p>
 Este proyecto analiza señales de electromiografía (EMG) utilizando algoritmos de programación. Se emplean herramientas de procesamiento de señales para leer, visualizar y analizar datos provenientes de registros EMG.
-</p>.
+</p>
+
 ### Caracteristicas principales
 - Lectura de señales EMG: Utiliza la biblioteca wfdb para leer señales EMG desde un archivo.
 -	Visualización de señales: Grafica las señales EMG en el dominio del tiempo.
