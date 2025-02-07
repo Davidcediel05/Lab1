@@ -91,10 +91,10 @@ La relación señal-ruido es una métrica fundamental en el procesamiento de se�
 ### Requisitos
 <p>
 Para ejecutar el código, es necesario instalar Python y las siguientes librerías:
--	wfdb
--	numpy
--	matplotlib
--	scipy
+- wfdb
+- numpy
+- matplotlib
+- scipy
 Tener instalado un compilador, que para este caso se utilizo spyder.  
 </p>
 
