@@ -74,6 +74,7 @@ Este proyecto es de uso académico y educativo.
 <p>
 Si tienes alguna pregunta o sugerencia, no dudes en contactarme:
 </p>
+
 - **Nombre:** [Juan David Cediel Farfan]
 - **Email:** [Juandacedielfarfan2@gmail.com]
 - **GitHub:** David05Cediel  
