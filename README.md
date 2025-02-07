@@ -24,7 +24,20 @@ Este proyecto analiza señales de electromiografía (EMG) utilizando algoritmos 
 El análisis estadístico de la señal EMG permite extraer información relevante sobre su comportamiento, lo que es fundamental para diversas aplicaciones biomédicas. Algunos de los aspectos analizados incluyen:
 </p>
 
-- Media y Varianza: Para conocer el nivel de actividad muscular y su variabilidad
-- Distribución de la Señal: Se utiliza la estimación de densidad de probabilidad para comprender la distribución de amplitudes.
-- Transformada de Fourier: Permite analizar la frecuencia dominante y evaluar la presencia de ruido.
-- Detección de Patrones: Ayuda en la identificación de fatiga muscular o anomalías en la actividad neuromuscular.
+- **Media:**  La media de una señal es una medida fundamental que proporciona información sobre el valor promedio de los datos. 
+- **Desviación estándar:** La desviación estándar de una señal es una medida de variabilidad de los datos.
+En señales EMG, nos permite:
+- Evaluar la amplitud de la señal.
+- Detectar ruido o artefactos.
+- Comparar la actividad muscular entre diferentes canales o condiciones.
+- Analizar la calidad de la señal.
+
+-**Histograma:** Es una herramienta grafica que nos permite analizar las propiedades estadísticas y visuales de una señal, para su procesamiento y mejora.
+Visualizar la distribución de amplitudes
+Identificar características estadísticas
+Detectar ruido o anomalías
+Análisis de contraste en imágenes
+Compresión de datos
+Diseño de filtros
+
+  
