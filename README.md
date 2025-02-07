@@ -19,9 +19,11 @@ Este proyecto analiza señales de electromiografía (EMG) utilizando algoritmos 
 - Lab1s.docx: Documento con información del laboratorio.
 
 ###Análisis Estadístico de la Señal
+
 <p>
 El análisis estadístico de la señal EMG permite extraer información relevante sobre su comportamiento, lo que es fundamental para diversas aplicaciones biomédicas. Algunos de los aspectos analizados incluyen:
 </p>
+
 - Media y Varianza: Para conocer el nivel de actividad muscular y su variabilidad
 - Distribución de la Señal: Se utiliza la estimación de densidad de probabilidad para comprender la distribución de amplitudes.
 - Transformada de Fourier: Permite analizar la frecuencia dominante y evaluar la presencia de ruido.
