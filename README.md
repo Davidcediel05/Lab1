@@ -1,11 +1,6 @@
 ## Analisis estadistico de señal EMG
 ### Descripcion 
 <p>
-Este proyecto analiza señales de electromiografía (EMG) utilizando algoritmos de programación. Se emplean herramientas de procesamiento de señales para leer, visualizar y analizar datos provenientes de registros EMG.
-</p>
-
-### Análisis estadístico de una señal EMG (en condiciones normales)
-<p>
 En este proyecto se busca identificar los estadísticos que describen una señal biomédica, obtenerlos a partir de algoritmos de programación y mostrarlas, además se procesara una señal de electromiografía (EMG) y se les añade diferentes tipos de ruidos (gaussiano, de impulso y artefacto), posterior a eso calcular SNR y se graficaran las señales resultantes
 Al trabajar con señales biomédicas como las de EMG, nos podemos encontrar con ruidos dentro de las mediciones, El ruido se puede crear por diversos motivos como interferencias eléctricas, movimientos involuntarios o alguna daño e interferencia en los electrodos.
 En este proyecto analizamos la señal y 3 tipos de ruidos:
@@ -18,7 +13,8 @@ Además, se mide la relación Señal-Ruido (SNR), con lo cual cuantificar la cal
 </p>
 
 #### Señal sin ruido
-[Imagen de la grafica]
+![Señal sin ruido]( C:\Users\Usuario\Downloads\Lab1\Lab1\Histograma.jpg)
+
 Se elige una señal original sin ninguna alteración, muestra un comportamiento real de una señal EMG, donde se evidencia picos normales de la actividad muscular
 
 #### Ruido gaussiano
@@ -43,16 +39,9 @@ Un ruido tipo de Artefacto se puede definir como una distorsión o error, lo cua
 En la grafica podemos observar como este tipo de ruido introduce una señal undilatoria que esta superpuesta a la señal original, su SNR(-13.67) lo cual nos indica que el ruido es mas fuerte que la señal original.
 </p>
 
-
-### Conclusión
-<p>
-Este proyecto nos permite identificar las métricas estadísticas de una señal de EMG en condiciones normales, para posteriormente analizar el comportamiento de esta señal agregando diferentes tipos de ruidos y con ello calcular su SNR lo cual nos ayuda a comprender el fundamento y el impacto de estos ruido.
-</p>
-
-
 ### Caracteristicas principales
 - Lectura de señales EMG: Utiliza la biblioteca wfdb para leer señales EMG desde un archivo.
--	Visualización de señales: Grafica las señales EMG en el dominio del tiempo.
+- Visualización de señales: Grafica las señales EMG en el dominio del tiempo.
 - Cálculo de métricas estadísticas: Calcula la media, desviación estándar, coeficiente de variación y genera histogramas con funciones de densidad de probabilidad (PDF).
 - Agregar ruido: Permite agregar ruido gaussiano, ruido de impulso y ruido tipo artefacto a la señal.
 - Cálculo de SNR: Calcula la relación señal-ruido (SNR) después de agregar ruido.
@@ -111,6 +100,12 @@ Tener instalado un compilador, que para este caso se utilizo spyder.
   Para probar la simulación de ruido, ejecuta:
   
 python Pruebaruido.py
+
+
+### Conclusión
+<p>
+Este proyecto nos permite identificar las métricas estadísticas de una señal de EMG en condiciones normales, para posteriormente analizar el comportamiento de esta señal agregando diferentes tipos de ruidos y con ello calcular su SNR lo cual nos ayuda a comprender el fundamento y el impacto de estos ruido.
+</p>
 
 ### Licencia
 
