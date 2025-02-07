@@ -26,7 +26,8 @@ El análisis estadístico de la señal EMG permite extraer información relevant
 
 - **Media:**  La media de una señal es una medida fundamental que proporciona información sobre el valor promedio de los datos. 
 - **Desviación estándar:** La desviación estándar de una señal es una medida de variabilidad de los datos.
-En señales EMG, nos permite:
+
+#### Estas medidas en señales EMG, nos permite:
 - Evaluar la amplitud de la señal.
 - Detectar ruido o artefactos.
 - Comparar la actividad muscular entre diferentes canales o condiciones.
