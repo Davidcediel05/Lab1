@@ -20,6 +20,21 @@ Se elige una señal original sin ninguna alteración, muestra un comportamiento 
 
 ![Señalsinruido](https://github.com/user-attachments/assets/286d7f53-465d-4017-aac7-89b0e850f3fb)
 
+**Implementación en el Código:**
+def calcular_snr(señal_ori, señal_ruido):
+    potencia_señal = np.mean(señal_ori ** 2)
+    ruido = señal_ruido - señal_ori
+    potencia_ruido = np.mean(ruido ** 2)
+    snr = 10 * np.log10(potencia_señal / potencia_ruido)
+    return snr
+    
+Donde:
+-	Se calcula la potencia de la señal original.
+-	Se extrae el ruido restando la señal contaminada menos la original.
+-	Se calcula la potencia del ruido.
+-	Se usa la ecuación de SNR para obtener su valor en dB.
+
+
 #### Ruido gaussiano
 <p>
 Se comprende como un ruido estadístico, se caracteriza por su curva en forma de campana, simétricamente alrededor de su valor medio, nos representa variaciones aleatorias que ocurren en los datos del mundo real, se caracteriza por su media y varianza, donde su media indica la tendencia central de ruido y la variancia mide la dispersión de los valores de ruido, dentro de nuestro enfoque este tipo de ruido se puede generar a partir de imperfecciones del sensor o factores ambientales.
@@ -27,6 +42,17 @@ Se comprende como un ruido estadístico, se caracteriza por su curva en forma de
 ![RuidoG](https://github.com/user-attachments/assets/1a95ec67-f2e6-4396-a05a-0f5dd530546f)
 
 Como se puede observar en la imagen se muestra la señal original(azul) y la señal con ruido gaussiano (naranja) en ella notamos como el ruido afecta su claridad sin embargo su SNR (10.01dB) al ser un numero positivo nos permite inferir que sigue siendo predominante la señal.
+
+**Implementación en el Código:**
+def ruido_gaussiano(señal, snr_objetivo):
+    ruido = np.random.normal(0, np.std(señal) / (10 ** (snr_objetivo / 20)), señal.shape)
+    señal_ruidosa = señal + ruido
+    graficar_señales(tiempo, señal, señal_ruidosa, "Ruido Gaussiano", calcular_snr(señal, señal_ruidosa))
+    
+-	Se genera un ruido con media 0 y desviación estándar basada en el SNR objetivo.
+-	Se suma el ruido a la señal original.
+-	Se grafica la señal contaminada con ruido.
+
 </p>
 
 
@@ -37,6 +63,20 @@ Este tipo de ruido se caracteriza por sonidos de corta duración y alguna presi�
 ![RuidoImpulso](https://github.com/user-attachments/assets/e07570ae-6fe2-4447-aefe-063385692ccf)
 
 En la grafica se logra observar la aparición de picos abruptos que ocurren de manera constante a lo largo de la señal, su SNR (-9.73dB) nos indica que el ruido influye en la claridad de la señal original.
+**Implementación en el Código:**
+def ruido_impulso(señal, porcentaje=0.05):
+    señal_ruidosa = señal.copy()
+    num_muestras = int(len(señal) * porcentaje)
+    indices = np.random.choice(len(señal), num_muestras, replace=False)
+    señal_ruidosa[indices] = np.max(señal) * np.random.choice([-1, 1], size=num_muestras)
+    graficar_señales(tiempo, señal, señal_ruidosa, "Ruido de Impulso", calcular_snr(señal, señal_ruidosa))
+    
+Donde:
+-	Se selecciona un 5% de la señal (por defecto).
+-	Se eligen posiciones aleatorias en la señal.
+-	Se reemplazan con valores máximos o mínimos.
+-	Se grafica la señal con ruido.
+
 </p>
 
 #### Ruido tipo Artefacto
@@ -46,6 +86,21 @@ Un ruido tipo de Artefacto se puede definir como una distorsión o error, lo cua
 ![RuidoA](https://github.com/user-attachments/assets/e36e59ec-b294-47ad-a48c-3c02790b749a)
 
 En la grafica podemos observar como este tipo de ruido introduce una señal undilatoria que esta superpuesta a la señal original, su SNR(-13.67) lo cual nos indica que el ruido es mas fuerte que la señal original.
+
+**Implementación en el Código:**
+
+def ruido_artefacto(señal, frecuencia=2, amplitud_factor=0.5):
+    tiempo = np.arange(len(señal))
+    ruido = amplitud_factor * np.max(señal) * np.sin(2 * np.pi * frecuencia * tiempo / len(señal))
+    señal_ruidosa = señal + ruido
+    graficar_señales(tiempo, señal, señal_ruidosa, "Ruido Tipo Artefacto", calcular_snr(señal, señal_ruidosa))
+    
+Donde:    
+-	Se genera un ruido sinusoidal con una frecuencia de 2 Hz.
+-	La amplitud del ruido es proporcional a la amplitud de la señal original.
+-	Se suma el ruido a la señal original.
+-	Se grafica la señal contaminada con artefactos.
+
 </p>
 
 ### Análisis Estadístico de la Señal
