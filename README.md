@@ -18,7 +18,7 @@ Este proyecto analiza señales de electromiografía (EMG) utilizando algoritmos 
 - emg_healthy.dat y emg_healthy.hea: Archivos de datos de la señal EMG.
 - Lab1s.docx: Documento con información del laboratorio.
 
-###Análisis Estadístico de la Señal
+### Análisis Estadístico de la Señal
 
 <p>
 El análisis estadístico de la señal EMG permite extraer información relevante sobre su comportamiento, lo que es fundamental para diversas aplicaciones biomédicas. Algunos de los aspectos analizados incluyen:
