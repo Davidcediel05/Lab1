@@ -9,17 +9,18 @@ Este proyecto analiza señales de electromiografía (EMG) utilizando algoritmos 
 En este proyecto se busca identificar los estadísticos que describen una señal biomédica, obtenerlos a partir de algoritmos de programación y mostrarlas, además se procesara una señal de electromiografía (EMG) y se les añade diferentes tipos de ruidos (gaussiano, de impulso y artefacto), posterior a eso calcular SNR y se graficaran las señales resultantes
 Al trabajar con señales biomédicas como las de EMG, nos podemos encontrar con ruidos dentro de las mediciones, El ruido se puede crear por diversos motivos como interferencias eléctricas, movimientos involuntarios o alguna daño e interferencia en los electrodos.
 En este proyecto analizamos la señal y 3 tipos de ruidos:
-</p>
 
 -	Señal sin ruido
 -	Ruido gaussiano
 -	Ruido impulso
 -	Ruido tipo Artefacto
 Además, se mide la relación Señal-Ruido (SNR), con lo cual cuantificar la calidad de la señal después de contaminarla de ruido
-**Señal sin ruido**
+</p>
+
+- **Señal sin ruido**
 [Imagen de la grafica]
 Se elige una señal original sin ninguna alteración, muestra un comportamiento real de una señal EMG, donde se evidencia picos normales de la actividad muscular
-**Ruido gaussiano**
+- **Ruido gaussiano**
 <p>
 Se comprende como un ruido estadístico, se caracteriza por su curva en forma de campana, simétricamente alrededor de su valor medio, nos representa variaciones aleatorias que ocurren en los datos del mundo real, se caracteriza por su media y varianza, donde su media indica la tendencia central de ruido y la variancia mide la dispersión de los valores de ruido, dentro de nuestro enfoque este tipo de ruido se puede generar a partir de imperfecciones del sensor o factores ambientales.
 [Imagen de la grafica]
