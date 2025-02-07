@@ -65,12 +65,12 @@ El análisis estadístico de la señal EMG permite extraer información relevant
 - Analizar la calidad de la señal.
 
 **Histograma:** Es una herramienta grafica que nos permite analizar las propiedades estadísticas y visuales de una señal, para su procesamiento y mejora.
-Visualizar la distribución de amplitudes
-Identificar características estadísticas
-Detectar ruido o anomalías
-Análisis de contraste en imágenes
-Compresión de datos
-Diseño de filtros
+- Visualizar la distribución de amplitudes
+- Identificar características estadísticas
+- Detectar ruido o anomalías
+- Análisis de contraste en imágenes
+- Compresión de datos
+- Diseño de filtros
 
 ![Histograma](https://github.com/user-attachments/assets/8c307ff4-5c97-4711-aa62-69623eccfd08)
 
