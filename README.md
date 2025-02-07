@@ -198,7 +198,7 @@ Este proyecto es de uso académico y educativo.
 Si tienes alguna pregunta o sugerencia, no dudes en contactarme:
 </p>
 
-- **Nombre:** [Juan David Cediel Farfan]
-- **Email:** [Juandacedielfarfan2@gmail.com]
-- **GitHub:** [David05Cediel]  
+- **Nombre:** [Juan David Cediel Farfan][Juan Yael Barriga Roa]
+- **Email:** [est.juand.cediel@unimilitar.edu.co][est.juan.barriga@unimilitar.edu.co]
+- **GitHub:** [David05Cediel][JuanYBR]
 
