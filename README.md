@@ -21,12 +21,12 @@ Se elige una señal original sin ninguna alteración, muestra un comportamiento 
 ![Señalsinruido](https://github.com/user-attachments/assets/286d7f53-465d-4017-aac7-89b0e850f3fb)
 
 **Implementación en el Código:**
-`def calcular_snr(señal_ori, señal_ruido):
-    potencia_señal = np.mean(señal_ori ** 2)
-    ruido = señal_ruido - señal_ori
-    potencia_ruido = np.mean(ruido ** 2)
-    snr = 10 * np.log10(potencia_señal / potencia_ruido)
-    return snr`
+`def calcular_snr(señal_ori, señal_ruido):`
+    `potencia_señal = np.mean(señal_ori ** 2)`
+    `ruido = señal_ruido - señal_ori`
+    `potencia_ruido = np.mean(ruido ** 2)`
+    `snr = 10 * np.log10(potencia_señal / potencia_ruido)`
+    `return snr`
     
 Donde:
 -	Se calcula la potencia de la señal original.
