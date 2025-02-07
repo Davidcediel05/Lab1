@@ -56,7 +56,7 @@ El análisis estadístico de la señal EMG permite extraer información relevant
 
 - **La Media:**  De una señal es una medida fundamental que proporciona información sobre el valor promedio de los datos. 
 - **Desviación estándar:** La desviación estándar de una señal es una medida de variabilidad de los datos.
-- **el coeficiente de variación** analiza la variabilidad relativa de las señales, en aplicaciones como la electromiografía, donde es importante comparar señales en diferentes condiciones.
+- **Coeficiente de variación:** Analiza la variabilidad relativa de las señales, en aplicaciones como la electromiografía, donde es importante comparar señales en diferentes condiciones.
   
 ![Metricas](https://github.com/user-attachments/assets/d5c5d173-16dc-4a44-a0e9-88008b335190)
 
