@@ -41,4 +41,39 @@ Análisis de contraste en imágenes
 Compresión de datos
 Diseño de filtros
 
+### Relacion señal-ruido
+<p>
+La relación señal-ruido es una métrica fundamental en el procesamiento de señales, puesto que permite evaluar la calidad de una señal en presencia de ruido, esta medida  compara la potencia de la señal útil con la potencia del ruido presente en un sistema.
+    
+</p>
+
+### Requisitos
+<p>
+Para ejecutar el código, es necesario instalar Python y las siguientes librerías:
+-	wfdb
+-	numpy
+-	matplotlib
+-	scipy
+Tener instalado un compilador, que para este caso se utilizo spyder.  
+</p>
+
+### Ejecución
+
+- Asegúrate de que los archivos de datos están en la misma carpeta que los scripts.
+-	Ejecuta Lab1.py o LABfinal.py para analizar la señal:
+- python Lab1.py
+  Para probar la simulación de ruido, ejecuta:
   
+python Pruebaruido.py
+
+### Licencia
+
+Este proyecto es de uso académico y educativo.
+
+### Contacto
+<p>
+Si tienes alguna pregunta o sugerencia, no dudes en contactarme:
+**Nombre:** [Juan David Cediel Farfan]
+**Email:** [Juandacedielfarfan2@gmail.com]
+**GitHub:** David05Cediel  
+</p>
