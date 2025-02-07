@@ -21,8 +21,8 @@ Se elige una señal original sin ninguna alteración, muestra un comportamiento 
 ![Señalsinruido](https://github.com/user-attachments/assets/286d7f53-465d-4017-aac7-89b0e850f3fb)
 
 **Implementación en el Código:**
-`def calcular_snr(señal_ori, señal_ruido):`
 
+`def calcular_snr(señal_ori, señal_ruido):`
     `potencia_señal = np.mean(señal_ori ** 2)`
     `ruido = señal_ruido - señal_ori`
     `potencia_ruido = np.mean(ruido ** 2)`
@@ -45,6 +45,7 @@ Se comprende como un ruido estadístico, se caracteriza por su curva en forma de
 Como se puede observar en la imagen se muestra la señal original(azul) y la señal con ruido gaussiano (naranja) en ella notamos como el ruido afecta su claridad sin embargo su SNR (10.01dB) al ser un numero positivo nos permite inferir que sigue siendo predominante la señal.
 
 **Implementación en el Código:**
+
 `def ruido_gaussiano(señal, snr_objetivo):
     ruido = np.random.normal(0, np.std(señal) / (10 ** (snr_objetivo / 20)), señal.shape)
     señal_ruidosa = señal + ruido
