@@ -17,10 +17,11 @@ En este proyecto analizamos la señal y 3 tipos de ruidos:
 Además, se mide la relación Señal-Ruido (SNR), con lo cual cuantificar la calidad de la señal después de contaminarla de ruido
 </p>
 
-- **Señal sin ruido**
+#### Señal sin ruido
 [Imagen de la grafica]
 Se elige una señal original sin ninguna alteración, muestra un comportamiento real de una señal EMG, donde se evidencia picos normales de la actividad muscular
-- **Ruido gaussiano**
+
+#### Ruido gaussiano
 <p>
 Se comprende como un ruido estadístico, se caracteriza por su curva en forma de campana, simétricamente alrededor de su valor medio, nos representa variaciones aleatorias que ocurren en los datos del mundo real, se caracteriza por su media y varianza, donde su media indica la tendencia central de ruido y la variancia mide la dispersión de los valores de ruido, dentro de nuestro enfoque este tipo de ruido se puede generar a partir de imperfecciones del sensor o factores ambientales.
 [Imagen de la grafica]
