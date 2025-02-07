@@ -127,6 +127,14 @@ Tener instalado un compilador, que para este caso se utilizo spyder.
 Este proyecto nos permite identificar las métricas estadísticas de una señal de EMG en condiciones normales, para posteriormente analizar el comportamiento de esta señal agregando diferentes tipos de ruidos y con ello calcular su SNR lo cual nos ayuda a comprender el fundamento y el impacto de estos ruido.
 </p>
 
+### Bibliografia
+<p>
+- Sartori, P., Rozowykniat, M., Siviero, L., Barba, G., Peña, A., Mayol, N., Acosta, D., Castro, J., & Ortiz, A. (2015). Artefactos y artificios frecuentes en tomografía computada y resonancia magnética. Revista Argentina de Radiología / Argentinian Journal Of Radiology, 79(4), 192-204. https://doi.org/10.1016/j.rard.2015.04.005
+- Svantek. (2023, 27 septiembre). Ruido de impulso | ¿Cómo medir? | Consultores Svantek. SVANTEK - Sound And Vibration. https://svantek.com/es/servicios/ruido-de-impulso/#:~:text=El%20ruido%20de%20impulso%20se,inferior%20a%201%20segundo)%C2%BB.
+- Learn Statistics Easily. (2024, 24 julio). Qué es: Ruido Gaussiano - APRENDE ESTADÍSTICAS FÁCILMENTE. LEARN STATISTICS EASILY. https://es.statisticseasily.com/glossario/what-is-gaussian-noise/
+
+</p>
+
 ### Licencia
 
 Este proyecto es de uso académico y educativo.
