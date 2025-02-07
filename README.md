@@ -75,6 +75,9 @@ El análisis estadístico de la señal EMG permite extraer información relevant
 
 ![Histograma](https://github.com/user-attachments/assets/8c307ff4-5c97-4711-aa62-69623eccfd08)
 
+<p>
+  En la grafica podemos observar que en la actividad muscular se presentan valores positivos mas frecuentes lo cual sugiere que hubo contracción muscular durante la medición, es evidente que el pico es muy pronunciado, lo cual indica que la señal tiene una buena calidad.
+</p>
 
 ### Relacion señal-ruido
 <p>
