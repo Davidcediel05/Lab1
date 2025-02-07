@@ -22,7 +22,8 @@ Se elige una señal original sin ninguna alteración, muestra un comportamiento 
 
 **Implementación en el Código:**
 
-def `calcular_snr(señal_ori, señal_ruido):
+`#
+def calcular_snr(señal_ori, señal_ruido):
 
     potencia_señal = np.mean(señal_ori ** 2)
     
