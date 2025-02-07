@@ -22,8 +22,7 @@ Se elige una señal original sin ninguna alteración, muestra un comportamiento 
 
 **Implementación en el Código:**
 
-`#
-def calcular_snr(señal_ori, señal_ruido):
+`def calcular_snr(señal_ori, señal_ruido):
 
     potencia_señal = np.mean(señal_ori ** 2)
     
@@ -55,7 +54,9 @@ Como se puede observar en la imagen se muestra la señal original(azul) y la se�
 `def ruido_gaussiano(señal, snr_objetivo):
 
     ruido = np.random.normal(0, np.std(señal) / (10 ** (snr_objetivo / 20)), señal.shape)
+    
     señal_ruidosa = señal + ruido
+    
     graficar_señales(tiempo, señal, señal_ruidosa, "Ruido Gaussiano", calcular_snr(señal, señal_ruidosa))`
     
 -	Se genera un ruido con media 0 y desviación estándar basada en el SNR objetivo.
@@ -74,10 +75,15 @@ Este tipo de ruido se caracteriza por sonidos de corta duración y alguna presi�
 En la grafica se logra observar la aparición de picos abruptos que ocurren de manera constante a lo largo de la señal, su SNR (-9.73dB) nos indica que el ruido influye en la claridad de la señal original.
 **Implementación en el Código:**
 `def ruido_impulso(señal, porcentaje=0.05):
+
     señal_ruidosa = señal.copy()
+    
     num_muestras = int(len(señal) * porcentaje)
+    
     indices = np.random.choice(len(señal), num_muestras, replace=False)
+    
     señal_ruidosa[indices] = np.max(señal) * np.random.choice([-1, 1], size=num_muestras)
+    
     graficar_señales(tiempo, señal, señal_ruidosa, "Ruido de Impulso", calcular_snr(señal, señal_ruidosa))`
     
 Donde:
@@ -99,9 +105,13 @@ En la grafica podemos observar como este tipo de ruido introduce una señal undi
 **Implementación en el Código:**
 
 `def ruido_artefacto(señal, frecuencia=2, amplitud_factor=0.5):
+    
     tiempo = np.arange(len(señal))
+    
     ruido = amplitud_factor * np.max(señal) * np.sin(2 * np.pi * frecuencia * tiempo / len(señal))
+    
     señal_ruidosa = señal + ruido
+    
     graficar_señales(tiempo, señal, señal_ruidosa, "Ruido Tipo Artefacto", calcular_snr(señal, señal_ruidosa))`
     
 Donde:    
