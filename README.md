@@ -47,20 +47,13 @@ Un ruido tipo de Artefacto se puede definir como una distorsión o error, lo cua
 En la grafica podemos observar como este tipo de ruido introduce una señal undilatoria que esta superpuesta a la señal original, su SNR(-13.67) lo cual nos indica que el ruido es mas fuerte que la señal original.
 </p>
 
-### Caracteristicas principales
-- Lectura de señales EMG: Utiliza la biblioteca wfdb para leer señales EMG desde un archivo.
-- Visualización de señales: Grafica las señales EMG en el dominio del tiempo.
-- Cálculo de métricas estadísticas: Calcula la media, desviación estándar, coeficiente de variación y genera histogramas con funciones de densidad de probabilidad (PDF).
-- Agregar ruido: Permite agregar ruido gaussiano, ruido de impulso y ruido tipo artefacto a la señal.
-- Cálculo de SNR: Calcula la relación señal-ruido (SNR) después de agregar ruido.
-
 ### Análisis Estadístico de la Señal
 
 <p>
 El análisis estadístico de la señal EMG permite extraer información relevante sobre su comportamiento, lo que es fundamental para diversas aplicaciones biomédicas. Algunos de los aspectos analizados incluyen:
 </p>
 
-- **Media:**  La media de una señal es una medida fundamental que proporciona información sobre el valor promedio de los datos. 
+- **La Media:**  De una señal es una medida fundamental que proporciona información sobre el valor promedio de los datos. 
 - **Desviación estándar:** La desviación estándar de una señal es una medida de variabilidad de los datos.
   
 ![Metricas](https://github.com/user-attachments/assets/d5c5d173-16dc-4a44-a0e9-88008b335190)
@@ -97,6 +90,13 @@ Para ejecutar el código, es necesario instalar Python y las siguientes librerí
 - scipy
 Tener instalado un compilador, que para este caso se utilizo spyder.  
 </p>
+
+### Caracteristicas principales
+- Lectura de señales EMG: Utiliza la biblioteca wfdb para leer señales EMG desde un archivo.
+- Visualización de señales: Grafica las señales EMG en el dominio del tiempo.
+- Cálculo de métricas estadísticas: Calcula la media, desviación estándar, coeficiente de variación y genera histogramas con funciones de densidad de probabilidad (PDF).
+- Agregar ruido: Permite agregar ruido gaussiano, ruido de impulso y ruido tipo artefacto a la señal.
+- Cálculo de SNR: Calcula la relación señal-ruido (SNR) después de agregar ruido.
 
 ### Estructura del proyecto
 - Lab1.py: Lee y visualiza la señal EMG desde un archivo
