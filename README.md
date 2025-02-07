@@ -9,6 +9,7 @@ En este proyecto analizamos la señal y 3 tipos de ruidos:
 -	Ruido gaussiano
 -	Ruido impulso
 -	Ruido tipo Artefacto
+  
 Además, se mide la relación Señal-Ruido (SNR), con lo cual cuantificar la calidad de la señal después de contaminarla de ruido
 </p>
 
