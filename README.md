@@ -112,7 +112,7 @@ Tener instalado un compilador, que para este caso se utilizo spyder.
 - python Lab1.py
   Para probar la simulación de ruido, ejecuta:
   
-python Pruebaruido.py
+`python Pruebaruido.py`
 
 
 ### Conclusión
