@@ -77,5 +77,5 @@ Si tienes alguna pregunta o sugerencia, no dudes en contactarme:
 
 - **Nombre:** [Juan David Cediel Farfan]
 - **Email:** [Juandacedielfarfan2@gmail.com]
-- **GitHub:** David05Cediel  
+- **GitHub:** [David05Cediel]  
 
