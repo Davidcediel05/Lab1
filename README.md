@@ -29,17 +29,14 @@ Como se puede observar en la imagen se muestra la señal original(azul) y la se�
 </p>
 
 
-
-
-
--	**Ruido impulso**
+#### Ruido impulso
 <P>
 Este tipo de ruido se caracteriza por sonidos de corta duración y alguna presión sonora por picos repentinos, por parte del entorno en el que analizamos este tipo de ruido se puede deber por algún error en los electrodos o movimientos bruscos dentro de la medición de EMG.
 [Imagen de la grafica]
 En la grafica se logra observar la aparición de picos abruptos que ocurren de manera constante a lo largo de la señal, su SNR (-9.73dB) nos indica que el ruido influye en la claridad de la señal original.
 </p>
 
--	**Ruido tipo Artefacto**
+#### Ruido tipo Artefacto
 <p>
 Un ruido tipo de Artefacto se puede definir como una distorsión o error, lo cual puede alterar la interpretación de la medición viéndose como un señal senoidal , simulando alguna patología, sin embargo, este tipo de ruido nos puede hablar de mal funcionamiento de los electrodos o algún contacto indebido dentro de la medición.
 [Imagen de la grafica]
