@@ -7,21 +7,22 @@ En este proyecto analizamos la señal y 3 tipos de ruidos:
 
 -	Señal sin ruido
 -	Ruido gaussiano
-![RuidoA](https://github.com/user-attachments/assets/1283152e-5dfa-4d10-a7d6-0cf526d368cc)
 -	Ruido impulso
 -	Ruido tipo Artefacto
 Además, se mide la relación Señal-Ruido (SNR), con lo cual cuantificar la calidad de la señal después de contaminarla de ruido
 </p>
 
 #### Señal sin ruido
-![Señal sin ruido]( C:\Users\Usuario\Downloads\Lab1\Lab1\Histograma.jpg)
+
 
 Se elige una señal original sin ninguna alteración, muestra un comportamiento real de una señal EMG, donde se evidencia picos normales de la actividad muscular
+![Señalsinruido](https://github.com/user-attachments/assets/286d7f53-465d-4017-aac7-89b0e850f3fb)
 
 #### Ruido gaussiano
 <p>
 Se comprende como un ruido estadístico, se caracteriza por su curva en forma de campana, simétricamente alrededor de su valor medio, nos representa variaciones aleatorias que ocurren en los datos del mundo real, se caracteriza por su media y varianza, donde su media indica la tendencia central de ruido y la variancia mide la dispersión de los valores de ruido, dentro de nuestro enfoque este tipo de ruido se puede generar a partir de imperfecciones del sensor o factores ambientales.
-[Imagen de la grafica]
+![RuidoG](https://github.com/user-attachments/assets/1a95ec67-f2e6-4396-a05a-0f5dd530546f)
+
 Como se puede observar en la imagen se muestra la señal original(azul) y la señal con ruido gaussiano (naranja) en ella notamos como el ruido afecta su claridad sin embargo su SNR (10.01dB) al ser un numero positivo nos permite inferir que sigue siendo predominante la señal.
 </p>
 
@@ -29,14 +30,16 @@ Como se puede observar en la imagen se muestra la señal original(azul) y la se�
 #### Ruido impulso
 <P>
 Este tipo de ruido se caracteriza por sonidos de corta duración y alguna presión sonora por picos repentinos, por parte del entorno en el que analizamos este tipo de ruido se puede deber por algún error en los electrodos o movimientos bruscos dentro de la medición de EMG.
-[Imagen de la grafica]
+![RuidoImpulso](https://github.com/user-attachments/assets/e07570ae-6fe2-4447-aefe-063385692ccf)
+
 En la grafica se logra observar la aparición de picos abruptos que ocurren de manera constante a lo largo de la señal, su SNR (-9.73dB) nos indica que el ruido influye en la claridad de la señal original.
 </p>
 
 #### Ruido tipo Artefacto
 <p>
 Un ruido tipo de Artefacto se puede definir como una distorsión o error, lo cual puede alterar la interpretación de la medición viéndose como un señal senoidal , simulando alguna patología, sin embargo, este tipo de ruido nos puede hablar de mal funcionamiento de los electrodos o algún contacto indebido dentro de la medición.
-[Imagen de la grafica]
+![RuidoA](https://github.com/user-attachments/assets/e36e59ec-b294-47ad-a48c-3c02790b749a)
+
 En la grafica podemos observar como este tipo de ruido introduce una señal undilatoria que esta superpuesta a la señal original, su SNR(-13.67) lo cual nos indica que el ruido es mas fuerte que la señal original.
 </p>
 
@@ -55,6 +58,7 @@ El análisis estadístico de la señal EMG permite extraer información relevant
 
 - **Media:**  La media de una señal es una medida fundamental que proporciona información sobre el valor promedio de los datos. 
 - **Desviación estándar:** La desviación estándar de una señal es una medida de variabilidad de los datos.
+![Metricas](https://github.com/user-attachments/assets/d5c5d173-16dc-4a44-a0e9-88008b335190)
 
 #### Estas medidas en señales EMG, nos permite:
 - Evaluar la amplitud de la señal.
@@ -69,6 +73,8 @@ Detectar ruido o anomalías
 Análisis de contraste en imágenes
 Compresión de datos
 Diseño de filtros
+![Histograma](https://github.com/user-attachments/assets/8c307ff4-5c97-4711-aa62-69623eccfd08)
+
 
 ### Relacion señal-ruido
 <p>
